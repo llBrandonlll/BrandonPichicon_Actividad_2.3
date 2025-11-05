@@ -29,4 +29,5 @@ public class Producto {
     public String toString() {
         return "Producto: " + nombre + " | Stock: " + stock;
     }
+// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 }
