@@ -1,0 +1,318 @@
+/*creamos la base de datos*/
+
+create database Escuela;
+
+
+/*usamos la bd*/
+
+use Escuela;
+
+/*creamos la tabla Estudiantes*/
+
+create table Estudiantes(
+RUT varchar (12) unique,
+Nombre varchar(20) not null,
+Apellido varchar(20) not null,
+primary key(RUT),
+Edad int check (edad > 0));
+
+
+select * from Estudiantes;
+
+/*ingresamos datos en la tabla estudiantes*/
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("20.654.876-K", "Tomas", "Huichao", 21);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("34.345.846-1", "Benito", "bravo", 20);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("20.931.374-K", "Alexander", "Penguals", 23);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("34.456.456-3", "pablo", "villa", 25);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("34.436.446-3", "Tego", "Calderon", 24);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("54.456.456-3", "Youngh", "Thug", 26);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("73.456.123-1", "Fabian", "Jofre", 21);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("21.435.635-K", "Karen", "Huichao", 22);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("33.456.456-3", "almendra", "Iner", 28);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("34.436.456-3", "Alonso", "Lanas", 23);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("12.345.678-9", "Andrea", "villa", 23);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("34.436.453-3", "Joahnna", "bravo", 34);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("12.456.456-3", "Valentina", "gutierrez", 21);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("26.456.456-3", "Francisca", "Jimenez", 25);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("24.456.456-3", "Felipe", "Jimenez", 22);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("10.654.876-K", "Barbara", "jofre", 19);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("32.345.846-1", "Italo", "Garcia", 22);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("20.931.374-5", "Danitza", "Tapia", 22);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("34.456.450-3", "Benjamin", "Marriagada", 27);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("44.436.446-3", "Pedro", "Miranda", 18);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("74.456.456-3", "Nelson", "Carcamo", 34);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("78.456.123-1", "Francisca", "Torres", 56);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("61.435.635-K", "Angela", "Gutierrez", 25);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("93.456.456-3", "Daniela", "Valenzuela", 28);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("4.436.456-3", "Maritza", "Asensio", 25);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("2.345.678-9", "Diego", "Parragues", 29);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("94.436.453-3", "Maritxu", "Amigo", 28);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("21.456.456-3", "Felipe", "Bahamondes", 27);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("56.456.456-3", "Catalina", "Perez", 25);
+
+insert into Estudiantes(RUT, Nombre, Apellido, Edad)
+values("84.456.456-3", "Axel", "Espinoza", 21);
+
+
+
+CREATE TABLE Cursos (
+ID_Curso INT AUTO_INCREMENT PRIMARY KEY,
+Nombre_curso VARCHAR(25) NOT NULL,
+Creditos INT CHECK (Creditos > 0));
+
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Lenguaje",255 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Matematicas",230 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Quimica",250 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Filosofia",231 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Fisica Computacional 1",300 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Comunicacion Efectiva", 456 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Intro Programacion",255 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("sistema operativo",255 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Diseño de Software", 120 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Ingles elemental 1", 345 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("ingkles elemental 2", 234 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("ingles elemental 3", 564 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Ingles avanzado 1", 345 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("ingles avanzado 2", 235 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Linguistica 1", 765 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Linguistica 2", 312 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Matematicas avanzada", 345 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Nivelacion Matematicas", 345 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Algebra 1", 423 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Algebra 2", 235 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Estadisticas 1", 123 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Pobrabilidades", 321 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Costura", 234 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Empanada 1", 345 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Empanada", 432 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Cazuela 1", 124 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Cazuela 2", 345 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Fisica 2", 345 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("Fisica 3", 456 );
+
+insert into Cursos(Nombre_Curso, Creditos)
+values("fisica 4", );
+
+CREATE TABLE Matriculas (
+ID_matricula INT AUTO_INCREMENT,
+RUT VARCHAR(12),
+ID_Curso INT,
+Fecha_Matricula DATE NOT NULL,
+PRIMARY KEY (ID_matricula),
+FOREIGN KEY (RUT) REFERENCES Estudiantes(RUT),
+FOREIGN KEY (ID_Curso) REFERENCES Cursos(ID_Curso));
+
+
+/*ingreso de datos en la tabla Matriculas*/
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('20.654.876-K', 9, '2025-03-01');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('34.345.846-1', 2, '2025-03-01');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('21.435.635-K', 23, '2025-03-02');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('12.345.678-9', 7, '2025-03-02');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('10.654.876-K', 9, '2025-03-03');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('24.456.456-3', 28, '2025-03-04');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('20.931.374-K', 1, '2025-03-05');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('34.456.456-3', 3, '2025-03-05');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('34.436.446-3', 4, '2025-03-05');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('54.456.456-3', 5, '2025-03-05');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('73.456.123-1', 6, '2025-03-06');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('33.456.456-3', 8, '2025-03-06');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('34.436.456-3', 10, '2025-03-06');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('34.436.453-3', 11, '2025-03-06');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('12.456.456-3', 12, '2025-03-07');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('26.456.456-3', 13, '2025-03-07');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('32.345.846-1', 14, '2025-03-07');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('20.931.374-5', 15, '2025-03-07');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('34.456.450-3', 16, '2025-03-08');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('44.436.446-3', 17, '2025-03-08');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('74.456.456-3', 18, '2025-03-08');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('78.456.123-1', 19, '2025-03-08');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('61.435.635-K', 20, '2025-03-09');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('93.456.456-3', 21, '2025-03-09');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('4.436.456-3', 22, '2025-03-09');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('2.345.678-9', 24, '2025-03-09');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('94.436.453-3', 25, '2025-03-10');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('21.456.456-3', 26, '2025-03-10');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula) 
+values ('56.456.456-3', 29, '2025-03-10');
+
+insert into Matriculas (RUT, ID_Curso, Fecha_Matricula)
+values ('84.456.456-3', 30, '2025-03-10');
+
+
+
+select * from Estudiantes;
+select * from Matriculas;
+select * from Cursos;
+
+
